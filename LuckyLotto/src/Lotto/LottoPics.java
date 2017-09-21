@@ -22,29 +22,32 @@ public class LottoPics {
 		 */
 		int lotto[] = new int[6];
 		int fantasyFive[] = new int[5];
-		
+
 		System.out.println("Your Lotto Numbers ");
 		// Iterate overa loop for the length of lotto and put
 		// random number into each index of loop
 		for (int i = 0; i < lotto.length; i++) {
 			// casting Math.random to an int. Math.random has a double value
-			lotto[i] = (int) (Math.random() * 54) +1;
+			lotto[i] = (int) (Math.random() * 54) + 1;
 		}
-		// Intitalizing a string to hold all the indexies of the lotto array. 
+		// Intitalizing a string to hold all the indexies of the lotto array.
 		// Quick console test to see if I have 6 numbers.
-		String winningLotto =(lotto[0]+" "+lotto[1]+" "+lotto[2]+" "+lotto[3]+" "+lotto[4]+" "+lotto[5]);
+		String winningLotto = (lotto[0] + " " + lotto[1] + " " + lotto[2] + " " + lotto[3] + " " + lotto[4] + " "
+				+ lotto[5]);
 		System.out.println(winningLotto);
 
 		// Following the same procedure as above for the fanatsyFive draw
 		System.out.println("\nYour Fantasy Five Numbers ");
 		for (int i = 0; i < fantasyFive.length; i++) {
-			fantasyFive[i] = (int) (Math.random() * 37)+1;
+			fantasyFive[i] = (int) (Math.random() * 37) + 1;
 		}
-		String winningFantasy =(fantasyFive[0]+" "+fantasyFive[1]+" "+fantasyFive[2]+" "+fantasyFive[3]+" "+fantasyFive[4]);
+		String winningFantasy = (fantasyFive[0] + " " + fantasyFive[1] + " " + fantasyFive[2] + " " + fantasyFive[3]
+				+ " " + fantasyFive[4]);
 		System.out.println(winningFantasy);
-		
-		//Using a JOptinonPane to show Momma her Lucky Numbers
+
+		// Using a JOptinonPane to show Momma her Lucky Numbers
 		ImageIcon lucky = new ImageIcon("fingerCrossed.jpeg");
-		JOptionPane.showMessageDialog(null,"Your Lotto numbers are: "+ winningLotto + "\nYour Fantasy Five Numbers are: " + winningFantasy+ "\nGood Luck!!!", "FingersCrossed", 0, lucky);
+		JOptionPane.showMessageDialog(null, "Your Lotto numbers are: " + winningLotto
+				+ "\nYour Fantasy Five Numbers are: " + winningFantasy + "\nGood Luck!!!", "FingersCrossed", 0, lucky);
 	}
 }
