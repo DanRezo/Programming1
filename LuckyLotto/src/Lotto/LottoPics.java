@@ -39,8 +39,10 @@ public class LottoPics {
 		for (int i = 0; i < fantasyFive.length; i++) {
 			fantasyFive[i] = (int) (Math.random() * 37)+1;
 		}
-		String winningFantasy =(fantasyFive[0]+" "+fantasyFive[1]+" "+fantasyFive[2]+" "+fantasyFive[3]+" "+fantasyFive[4]+" "+lotto[5]);
+		String winningFantasy =(fantasyFive[0]+" "+fantasyFive[1]+" "+fantasyFive[2]+" "+fantasyFive[3]+" "+fantasyFive[4]);
 		System.out.println(winningFantasy);
-		//JOptionPane.showMessageDialog(null,"Your Lotto numbers are"+ winningLotto);
+		
+		//Using a JOptinonPane to show Momma her Lucky Numbers!
+		JOptionPane.showMessageDialog(null,"Your Lotto numbers are: "+ winningLotto + "\nYour Fantasy Five Numbers are: " + winningFantasy+ "\nGood Luck!!!");
 	}
 }
