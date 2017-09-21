@@ -9,6 +9,7 @@
 //********************************************************************************
 package Lotto;
 
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class LottoPics {
@@ -42,7 +43,8 @@ public class LottoPics {
 		String winningFantasy =(fantasyFive[0]+" "+fantasyFive[1]+" "+fantasyFive[2]+" "+fantasyFive[3]+" "+fantasyFive[4]);
 		System.out.println(winningFantasy);
 		
-		//Using a JOptinonPane to show Momma her Lucky Numbers!
-		JOptionPane.showMessageDialog(null,"Your Lotto numbers are: "+ winningLotto + "\nYour Fantasy Five Numbers are: " + winningFantasy+ "\nGood Luck!!!");
+		//Using a JOptinonPane to show Momma her Lucky Numbers
+		ImageIcon lucky = new ImageIcon("fingerCrossed.jpeg");
+		JOptionPane.showMessageDialog(null,"Your Lotto numbers are: "+ winningLotto + "\nYour Fantasy Five Numbers are: " + winningFantasy+ "\nGood Luck!!!", "FingersCrossed", 0, lucky);
 	}
 }
